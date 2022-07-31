@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    --font1: 'Open Sans', sans-serif;
+    --font2: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font1);
+    background-color: var(--violet);
+    background-image: url('../images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.content{
+    max-width: 350px;
+    height: 648px;
+    margin: 40px auto 20px;
+}
+
+.section1{
+    height: 350px;
+}
+
+.logo-content{
+    width: 150px;
+}
+
+.section1__logo{
+    width: 100%;
+}
+.section1__mockup{
+    width: 100%;
+}
+
+.section2{
+    color: #fff;
+    height: 480px;
+}
+
+.section2__title{
+    font-family: var(--font2);
+    font-size: 26px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.section2__paragraph{
+    font-size: 1.15rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section2__btn{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section2__register{
+    width: 280px;
+    height: 55px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: var(--violet);
+    background-color: #fff;
+    display: inline-block;
+    padding-top: 13px;
+    text-decoration: none;
+}
+
+.section2__register:hover{
+    background-color: var(--soft-magenta);
+    color: #fff;
+}
+
+.social{
+    text-align: center;
+}
+
+.social__icons{
+    width: 160px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.fa-brands{
+    border: 2px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    padding-top: 9px;
+}
+
+.fa-brands:hover{
+    border-color: var(--soft-magenta);
+    color: var(--soft-magenta);
+    cursor: pointer;
+}
+
+@media (min-width:1284px) {
+    body{
+        background-image: url('../images/bg-desktop.svg');
+        background-size: unset;
+    }
+
+    .content{
+        margin: 60px auto 40px;
+        max-width: 1244px;
+        height: 700px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .section1{
+        width: 750px;
+        height: 700px;
+    }
+
+    .logo-content{
+        width: 210px;
+        height: 120px;
+    }
+
+    .section1__mockup{
+        width: 715px;
+    }
+
+    .section2{
+        height: 700px;
+    }
+
+    .section2__title{
+        margin-top: 165px;
+        height: 133px;
+        font-size: 35px;
+        text-align: left;
+        padding-right: 92px;
+    }
+
+    .section2__paragraph{
+        height: 65px;
+        font-size: 1.03rem;
+        text-align: left;
+        padding-right: 17px;
+    }
+
+    .section2__btn{
+        text-align: left;
+        margin-bottom: 199px;
+    }
+
+    .section2__register{
+        width: 200px;
+        height: 58px;
+        font-size: 20px;
+        padding-top: 14px;
+        text-align: center;
+    }
+
+    .social{
+        text-align: right;
+    }
+
+    .social__icons{
+        width: 156px;
+    }
+
+    .fa-brands{
+        width: 44px;
+        height: 44px;
+        font-size: 22px;
+        padding: 8px;
+        text-align: center;
+    }
+}
